@@ -8,3 +8,9 @@ Contains Submodules + GNAT + coreboot cross toolchains
 GNAT and native GCC have to line up or ADA wont work. 
 
 This will kill your display
+
+
+split -b 95M coreboot.tar.bz2 "coreboot.tar.bz2.part"
+ls -lh coreboot.tar.bz2.parta*
+
+cat coreboot.tar.bz2.parta* >coreboot.tar.bz2
