@@ -1,0 +1,54 @@
+Full image detected
+The ME/TXE region goes from 0x3000 to 0x500000
+Found FPT header at 0x3010
+Found 23 partition(s)
+Found FTPR header: FTPR partition spans from 0x180000 to 0x24a000
+ME/TXE firmware version 8.1.72.3002
+Public key match: Intel ME, firmware versions 7.x.x.x, 8.x.x.x
+The AltMeDisable bit is NOT SET
+Reading partitions list...
+ ???? (0x000003c0 - 0x000000400, 0x00000040 total bytes): removed
+ FOVD (0x00000400 - 0x000001000, 0x00000c00 total bytes): removed
+ MDES (0x00001000 - 0x000002000, 0x00001000 total bytes): removed
+ FCRS (0x00002000 - 0x000003000, 0x00001000 total bytes): removed
+ EFFS (0x00003000 - 0x0000df000, 0x000dc000 total bytes): removed
+ BIAL (NVRAM partition, no data, 0x0000add0 total bytes): nothing to remove
+ BIEL (NVRAM partition, no data, 0x00003000 total bytes): nothing to remove
+ BIIS (NVRAM partition, no data, 0x00036000 total bytes): nothing to remove
+ NVCL (NVRAM partition, no data, 0x00010511 total bytes): nothing to remove
+ NVCM (NVRAM partition, no data, 0x0000493f total bytes): nothing to remove
+ NVCP (NVRAM partition, no data, 0x0000a553 total bytes): nothing to remove
+ NVJC (NVRAM partition, no data, 0x00004000 total bytes): nothing to remove
+ NVKR (NVRAM partition, no data, 0x0001257d total bytes): nothing to remove
+ NVOS (NVRAM partition, no data, 0x00034af5 total bytes): nothing to remove
+ NVSH (NVRAM partition, no data, 0x00007609 total bytes): nothing to remove
+ NVTD (NVRAM partition, no data, 0x00001eac total bytes): nothing to remove
+ PLDM (NVRAM partition, no data, 0x0000a000 total bytes): nothing to remove
+ GLUT (0x000df000 - 0x0000e3000, 0x00004000 total bytes): removed
+ LOCL (0x000e3000 - 0x0000e7000, 0x00004000 total bytes): removed
+ WCOD (0x000e7000 - 0x000140000, 0x00059000 total bytes): removed
+ MDMV (0x00140000 - 0x000180000, 0x00040000 total bytes): removed
+ FTPR (0x00180000 - 0x00024a000, 0x000ca000 total bytes): NOT removed
+ NFTP (0x0024a000 - 0x0004a4000, 0x0025a000 total bytes): removed
+Removing partition entries in FPT...
+Removing EFFS presence flag...
+Correcting checksum (0x2f)...
+Reading FTPR modules list...
+ UPDATE           (LZMA   , 0x1cc508 - 0x1cc6c6       ): removed
+ ROMP             (Huffman, fragmented data, ~2 KiB   ): NOT removed, essential
+ BUP              (Huffman, fragmented data, ~56 KiB  ): NOT removed, essential
+ KERNEL           (Huffman, fragmented data, ~135 KiB ): removed
+ POLICY           (Huffman, fragmented data, ~91 KiB  ): removed
+ HOSTCOMM         (LZMA   , 0x1cc6c6 - 0x1d343f       ): removed
+ RSA              (LZMA   , 0x1d343f - 0x1d872a       ): removed
+ CLS              (LZMA   , 0x1d872a - 0x1ddec0       ): removed
+ TDT              (LZMA   , 0x1ddec0 - 0x1e45be       ): removed
+ FTCS             (Huffman, fragmented data, ~18 KiB  ): removed
+ ClsPriv          (LZMA   , 0x1e45be - 0x1e499f       ): removed
+ SESSMGR          (LZMA   , 0x1e499f - 0x1f32cb       ): removed
+The ME minimum size should be 1667072 bytes (0x197000 bytes)
+The ME region can be reduced up to:
+ 00003000:00199fff me
+Setting the AltMeDisable bit in PCHSTRP10 to disable Intel ME...
+Checking the FTPR RSA signature... VALID
+Done! Good luck!
